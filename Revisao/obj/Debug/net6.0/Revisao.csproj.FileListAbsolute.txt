@@ -1,0 +1,15 @@
+D:\estudos\DIO\Exemplo c#\Revisao\bin\Debug\net6.0\Revisao.exe
+D:\estudos\DIO\Exemplo c#\Revisao\bin\Debug\net6.0\Revisao.deps.json
+D:\estudos\DIO\Exemplo c#\Revisao\bin\Debug\net6.0\Revisao.runtimeconfig.json
+D:\estudos\DIO\Exemplo c#\Revisao\bin\Debug\net6.0\Revisao.dll
+D:\estudos\DIO\Exemplo c#\Revisao\bin\Debug\net6.0\ref\Revisao.dll
+D:\estudos\DIO\Exemplo c#\Revisao\bin\Debug\net6.0\Revisao.pdb
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.csproj.AssemblyReference.cache
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.GeneratedMSBuildEditorConfig.editorconfig
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.AssemblyInfoInputs.cache
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.AssemblyInfo.cs
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.csproj.CoreCompileInputs.cache
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.dll
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\ref\Revisao.dll
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.pdb
+D:\estudos\DIO\Exemplo c#\Revisao\obj\Debug\net6.0\Revisao.genruntimeconfig.cache

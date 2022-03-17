@@ -1,32 +1,14 @@
-﻿
-using System.Globalization;
-Retangulo x, y;
-x = new Retangulo();
-y = new Retangulo();
+﻿Pessoa a, b;
+a = new Pessoa();
+b = new Pessoa();      
+a.Name = Console.ReadLine();
+a.salario = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Entre com as medidas do retângulo X:");
-x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+b.Name = Console.ReadLine();
+b.salario = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Entre com as medidas do retângulo Y:");
-y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-
-
-double areaX = x.A * x.B;
-
-
-double areaY = y.A*y.B;
-
-Console.WriteLine("Área de X = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
-Console.WriteLine("Área de Y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
-
-if (areaX > areaY)
+if (a.salario > b.salario)
 {
-    Console.WriteLine("Maior área: X");
+    Console.WriteLine("Salário " + a.Name+" maior");
 }
-else
-{
-    Console.WriteLine("Maior área: Y");
-}
+else { Console.WriteLine("Salário " + b.Name + " maior"); }

@@ -1,0 +1,93 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+namespace exetentativa2
+{
+    public class Program
+    {
+        static void Main(string[] args) //não sei pq usa isso (parece que tudo no arquivo principal é um método
+        {
+
+
+
+            Console.WriteLine("escreva o número da conta");
+            int Conta = int.Parse(Console.ReadLine());
+            Console.WriteLine("escreva o nome do titular");
+            string Titular = Console.ReadLine();
+
+            Console.WriteLine("A conta tem saldo inicial? ");
+            char Resp = char.Parse(Console.ReadLine());
+
+            ContaBancaria conta;
+            Double Saldo = 0;
+            if (Resp == 's' || Resp == 'S')
+            {
+                Console.WriteLine("escreva o Saldo da Conta");
+                Saldo = double.Parse(Console.ReadLine());
+
+                conta = new ContaBancaria (Conta, Titular, Saldo);
+            }
+            else { conta = new ContaBancaria (Conta, Titular); }
+            Console.WriteLine(conta);
+
+            Console.WriteLine(" escreva valor do depósito");
+           double quantia = (double.Parse(Console.ReadLine()));
+            conta.Deposito(quantia);
+            Console.WriteLine(conta);
+
+            Console.WriteLine(" escreva valor do saque");
+            quantia = (double.Parse(Console.ReadLine()));
+            conta.Saque(quantia);
+            Console.WriteLine(conta);
+
+
+
+        }
+
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
+namespace exetentativa2
+{
+    public class ContaBancaria
+    {
+        public int Conta { get; private set; }
+        public string Titular { get; set; }
+        public double Saldo { get; private set; }
+
+
+        public ContaBancaria(int conta, string titular)
+        {
+            Conta = conta;
+            Titular = titular;
+        }
+        public ContaBancaria(int conta, string titular, double Saldo)
+        {
+            Conta = conta;
+            Titular = titular;
+            Deposito(Saldo);
+        }
+
+        public void Deposito(double quantia) { Saldo += quantia; }
+        public void Saque(double quantia) { Saldo -= quantia; }
+
+        public override string ToString() //• ToString - converte o objeto para string, O tostring é feito na classe, usando sobreposição (override)
+        {
+            return "conta " + Conta + " Titular " + Titular + " Saldo " + Saldo.ToString("F2", CultureInfo.InvariantCulture);
+        }
+
+
+
+    }
+}
